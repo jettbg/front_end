@@ -1,0 +1,102 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+header,section,footer{
+    width: 1000px;
+    margin: 0 auto;
+    background-color: pink;
+}
+header,footer{
+    height: 80px;
+
+}
+section{
+    margin: 20px auto;
+    overflow: hidden;
+}
+section>div{
+    float: left;
+    background-color: #ccc;
+
+}
+.left{
+    width: 490px;
+    margin-right: 20px;
+}
+.left>div{
+    height: 200px;
+    background-color: yellow;
+}
+.left>div:nth-child(-n+2){
+    margin-bottom: 20px;
+}
+.left-one>div{
+    float: left;
+}
+.left-one-1{
+    width: 115px;
+    height: 100%;
+    background-color: green;
+}
+.left-one-2{
+    width: 115px;
+    height: 100%;
+    background-color: green;
+    margin-left: 10px;
+}
+.left-one-3{
+    width: 115px;
+    height: 100%;
+    background-color: green;
+    margin-left: 10px;
+}
+.left-one-4{
+    width: 115px;
+    height: 100%;
+    background-color: green;
+    margin-left: 10px;
+}
+.right{
+    width: 490px;
+}
+.right>div{
+    height: 200px;
+    background-color: yellow;
+}
+.right>div:nth-child(-n+2){
+    margin-bottom: 20px;
+}
+.right-one>div{
+    float: left;
+}
+.right-one-1{
+    width: 115px;
+    height: 100%;
+    background-color: green;    
+}
+.right-one-2{
+    width: 115px;
+    height: 100%;
+    background-color: green; 
+    margin-left: 10px;   
+}
+.right-one-3{
+    width: 115px;
+    height: 100%;
+    background-color: green;  
+    margin-left: 10px;  
+}
+.right-one-4{
+    width: 115px;
+    height: 100%;
+    background-color: green;   
+    margin-left: 10px; 
+}

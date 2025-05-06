@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 函数</title>
+</head>
+<body>
+    <script>
+        function hello(){
+            console.log('hello world');
+        }
+        hello();
+
+        function hello_with_return() {
+            return 'hello world!-返回值'
+        }
+        // 函数的返回值可以赋值给变量
+        // 也可以直接使用
+        let a=hello_with_return();
+        console.log(a);
+        console.log(hello_with_return());
+
+        function hello_with_param(name){
+            console.log('hello,'+name);
+        }
+        hello_with_param('如花');
+        hello_with_param('小明');
+
+
+        //作用域
+        // 变量的作用域是指变量在代码中可访问的范围
+        // 变量的作用域分为全局作用域和局部作用域
+        // 全局作用域：在函数外部声明的变量可以在整个代码中访问
+        // 局部作用域：在函数内部声明的变量只能在函数内部访问
+        // 变量的作用域是由函数的嵌套关系决定的
+        // 内部函数可以访问外部函数的变量，但外部函数不能访问内部函数的变量
+        let global_var='全局变量'; // 全局变量
+        function local_var_function(){
+            let local_var='局部变量'; // 局部变量
+            console.log('函数内打印全局变量：'+global_var); // 可以访问全局变量
+            console.log('函数内打印局部变量：'+local_var); // 可以访问局部变量
+        }
+        console.log('函数外打印全局变量：'+global_var); //  全局可以访问全局变量
+        // console.log('函数外打印局部变量：'+local_var); // 报错，无法访问局部变量 
+    </script>    
+</body>
+</html>

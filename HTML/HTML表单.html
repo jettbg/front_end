@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML表单</title>
+</head>
+<body>
+    <form>
+        <!--表单元素-->
+        <!--让用户点击文字时，自动把焦点切换到对应的表单元素上（比如输入框）
+        当你点击「密码:」,[用户名：]时，输入框就自动获得焦点
+        for 属性和控件的 id 属性要一致，才能产生关联-->
+        <label for="username">用户名:</label>
+        <input type="text" id="username" placeholder="请输入用户名" > <!--文本框--> 
+        <br><br> <!--换行-->
+        <label for="pwd">密码:</label>
+        <input type="password" id="pwd" value="请输入密码" > <br><br>
+
+        <label>性别:</label>
+        <input type="radio" name="gender">男
+        <input type="radio" name="gender">女<br><br>
+         <!-- 下拉列表 -->
+        <label for="country">国家:</label>
+        <select id="country" name="country">
+        <option value="cn">中</option>
+        <option value="usa">英</option>
+        <option value="uk">美</option>
+        </select><br><br>
+
+        <label>爱好:</label>
+        <input type="checkbox" name="hobby">羽毛球
+        <input type="checkbox" name="hobby">足球
+        <input type="checkbox" name="hobby">乒乓球<br><br>
+
+        <input type="submit" value="上传"> <!--提交按钮-->
+        </form> 
+        <form action="#"></form>
+       
+
+
+
+        
+ 
+
+    
+</body>
+</html>

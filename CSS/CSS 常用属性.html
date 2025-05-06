@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 常用属性</title>
+    <style>
+        .block {
+            background-color: aquamarine;
+            width: 150px;
+            height: 100px;
+        }
+
+        .inline {
+            background-color: lightcoral;
+
+
+        }
+        .inline-block {
+            width: 100px;
+            height: 150px;  
+        }
+
+        .div-inline {
+            display: inline;
+            background-color: lightblue;
+        }
+
+        .span-inline-block {
+            display: inline-block;
+            background-color: lightgreen;
+            width: 500px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1 style="font: bolder 50px 'KaiTi';">这是一个font复合属性示例</h1>
+    <!-- 顺序是固定的：style字体的倾斜样式 → variant字母的变体形式 → weight字体的粗细 → size字体大小/line-height行高(行间距) → family指定字体名称。
+         必需参数：font-size 和 font-family 必须存在。
+         语法符号：line-height 需用 / 分隔，字体族用逗号分隔。 -->
+    <p style="line-height: 30px;">这是一段长文本微光浅涂天际，黎明在指尖轻叩 轻风拂过沉睡的柳絮，唤醒未眠的梦境。蓝色时刻在天边淌过，似水的光影氤氲了思绪 一缕薄雾拢住行人的足音，如絮语在晨曦中低吟，心事飘向行云，化作漫天飞絮，随日光暖开   在这初醒的世界，每一声呼吸都承载着希望。这是一段长文本微光浅涂天际，黎明在指尖轻叩 轻风拂过沉睡的柳絮，唤醒未眠的梦境。蓝色时刻在天边淌过，似水的光影氤氲了思绪 一缕薄雾拢住行人的足音，如絮语在晨曦中低吟，心事飘向行云，化作漫天飞絮，随日光暖开   在这初醒的世界，每一声呼吸都承载着希望。</p>   
+    
+    <div class="block">这是一个块级元素</div>
+    <!-- 块级元素的特点：
+        （1）自己独占一行
+        （2）高度，宽度，外边距以及内边距都可以控制
+        （3）宽度默认是容器的100%
+        （4）是一个容器及盒子、里面可以放行内或者块级元素。 -->
+    <span class="inline">这是一个行内元素</span>
+    <!-- 行内元素的特点
+        （1）相邻行内元素在一行上，一行可以显示多个。
+        （2）高、宽直接设置时无效的。
+        （3）行内元素的宽度是由内容决定的。
+        （4）行内元素只能容纳文本或者其他行内元素。-->
+    <img src="./aaaaaa.png" alt="" class="inline-block">
+    <img src="./aaaaaa.png" alt="" class="inline-block">
+    <img src="./aaaaaa.png" alt="" class="inline-block">
+    <!-- 行内块元素的特点
+        （1）和相邻内元素（行内块）在一行上，但是之间会有空白缝隙。一行可以显示多个
+        （2）默认宽度就是它本身内容的宽度
+        （3）高度，行高，外边距以及内边距都可以控制。 -->
+
+    <!-- 相互转换 -->
+    <div class="div-inline">这是一个转化成行内元素的div标签</div>
+    <span class="span-inline-block">这是一个转换成行内块元素的span标签</span>
+
+</body>
+</html>
